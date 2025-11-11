@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff; /* Bleu pour un look professionnel/éducatif */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+}
+
+.catalogue-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.livre-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Taille fixe pour chaque carte */
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.livre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.livre-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.details {
+    padding: 15px;
+}
+
+.details h3 {
+    color: #0056b3;
+    margin-top: 0;
+}
+
+.auteur, .categorie {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.disponibilite {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.disponible {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.indisponible {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 0.8em;
+}
